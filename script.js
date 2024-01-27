@@ -28,3 +28,28 @@ let lightColor = (element, number) => {
     element.classList.remove("selected");
   }, number - 250);
 };
+
+let checkOrder = () => {
+  for (let i in clickedOrder) {
+    if (clickedOrder[i] != order[1]) {
+      lose();
+      break;
+    }
+  }
+
+  if (clickedOrder.length == order.length) {
+    alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!`);
+    nextLevel();
+  }
+};
+
+let click = (color) => {
+  clickedOrder[clickedOrder.length] = color;
+  createColorElement(color).classList.add("selected");
+
+  setTimeout(() => {
+    createColorElement(color).classList.remove("selected");
+  });
+
+  checkOrder();
+};
