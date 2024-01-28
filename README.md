@@ -2,7 +2,7 @@
 Reproduzindo o jogo da memoria estilo Genius com Vanilla js.
 
 ## Link
-[Rescue Game](https://kayquesekishiki.github.io/Genius_Game/)
+[Genius_Game](https://kayquesekishiki.github.io/Genius_Game/)
 
 ## Images:
 <div align="center">  
